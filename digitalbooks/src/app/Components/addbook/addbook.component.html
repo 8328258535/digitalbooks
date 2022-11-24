@@ -1,0 +1,69 @@
+
+<style>
+    img{
+        margin-left: 200px;
+    }
+    input{
+        margin-left: 20px;
+    }
+    label{
+    
+        margin-left: 100px;
+        background-color: rgb(85, 130, 0);
+        font-size: 20px;
+    }
+    button{
+        margin-left: 500px;
+        background-color: lawngreen;
+        font-size: x-large;
+        margin-bottom: 200px;
+    
+        
+    }
+    h4{
+        margin-left: 160px;
+    }
+</style>
+<img src="https://media.istockphoto.com/id/1223229213/vector/elearning.jpg?s=612x612&w=0&k=20&
+c=IFhANNtbih4ufBs3DA9T2g1mCSzkZ9pwMGfepHuG33Y=" width="200px" height="100px">
+<br>
+<br>
+<h4>Create your book</h4>
+<label>title:</label>
+<input [(ngModel)]=book.tiltle type="text" placeholder="enter title" style="margin-left: 110px;">
+<br>
+<br>
+<label>image:</label>
+<input [(ngModel)]=book.image type="text" placeholder="image" style="margin-left: 90px;">
+<br>
+<br>
+<label>category:</label>
+<input [(ngModel)]=book.category type="text" placeholder="category" style="margin-left: 70px;">
+<br>
+<br>
+<label>price:</label>
+<input [(ngModel)]=book.price type="text" placeholder="price" style="margin-left: 100px;">
+<br>
+<br>
+<label>author:</label>
+<input [(ngModel)]=book.author type="text" placeholder="author" style="margin-left: 85px;">
+<br>
+<br>
+<label>publisher:</label>
+<input [(ngModel)]=book.publisher type="text" placeholder="publisher" style="margin-left: 65px;">
+<br>
+<br>
+<label>publishedDate:</label>
+<input [(ngModel)]=book.publishedDate type="text" placeholder="publishedDate" >
+<br>
+<br>
+<label>content:</label>
+<input [(ngModel)]=book.content type="text" placeholder="content" style="margin-left: 80px;">
+<br>
+<br>
+<label>active:</label>
+<input [(ngModel)]=book.active type="text" placeholder="active" style="margin-left: 95px;">
+<br>
+<br>
+<button (click)="save()">addBook</button>
+

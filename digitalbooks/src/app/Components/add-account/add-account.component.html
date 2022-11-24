@@ -1,0 +1,32 @@
+
+<style>
+    img{
+        margin-left: 500px;
+    }
+    input{
+        margin-left: 500px;
+        margin-bottom: 20px;
+    }
+    button{
+        margin-bottom: 10px;
+        background-color: green;
+    }
+    h3{
+        margin-left: 470px;
+    }
+</style>
+
+<img src="https://media.istockphoto.com/id/1223229213/vector/elearning.jpg?s=612x612&w=0&k=20&
+c=IFhANNtbih4ufBs3DA9T2g1mCSzkZ9pwMGfepHuG33Y=" width="200px" height="100px">
+<br>
+<br>
+
+<h3>Create your account</h3>
+<input [(ngModel)]=author.authorName class = "authorName" type="text" placeholder="authorName">
+<br>
+<input [(ngModel)]=author.authoremail class = "authoremail" type="text" placeholder="authoremail">
+<br>
+<input [(ngModel)]=author.authorpassword class = "authorpassword" type="password" placeholder="authorpassword">
+<br>
+<button (click) = "save()" routerLink="/addBook" class="signup-box" style="margin-left: 500px;">Signup</button>
+

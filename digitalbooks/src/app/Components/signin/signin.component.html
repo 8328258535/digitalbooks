@@ -1,0 +1,37 @@
+
+
+
+<style>
+    img{
+        margin-left: 500px;
+    }
+    input{
+        margin-left: 500px;
+        margin-bottom: 20px;
+    }
+    button{
+        margin-bottom: 10px;
+        background-color: green;
+    }
+    h3{
+        margin-left: 500px;
+        background-color: honeydew;
+    }
+</style>
+<h3>Please login</h3>
+
+<img src="https://media.istockphoto.com/id/1223229213/vector/elearning.jpg?s=612x612&w=0&k=20&
+c=IFhANNtbih4ufBs3DA9T2g1mCSzkZ9pwMGfepHuG33Y=" width="200px" height="100px">
+<br>
+<br>
+<div>
+<input [(ngModel)] = "authorlogin.authoremail" style="margin-left: 500px;" 
+class = "authoremail" type="text" placeholder="authoremail" required>
+</div>
+<div>
+<input [(ngModel)] = "authorlogin.authorpassword" style="margin-left: 500px;"
+ class = "authorpassword" type="password" placeholder="authorpassword" required>
+</div>
+<button (click) = "save()" routerLink="/addBook" class="signin-box" style="margin-left: 500px;">Signin</button>
+
+
